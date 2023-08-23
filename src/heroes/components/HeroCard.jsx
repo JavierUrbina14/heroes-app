@@ -17,10 +17,7 @@ export const HeroCard = ({
     characters ,
 }) => {
 
-    const heroImageUrl = `/src/assets/heroes/${ id }.jpg`;
-
-    // const charactesByHero =  (<p>{ characters }</p>);
-
+    const heroImageUrl = `/assets/heroes/${ id }.jpg`;
 
     return (
         <div className="col animate__animated animate__fadeIn">
@@ -38,11 +35,6 @@ export const HeroCard = ({
 
                             <h5 className="card-title">{ superhero }</h5>
                             <p className="card-text">{ alter_ego }</p>
-
-                            {/* {
-                                ( alter_ego !== characters ) && charactesByHero
-                                ( alter_ego !== characters ) && <p>{ characters }</p>
-                            } */}
                             <CharactersByHero characters={ characters } alter_ego={ alter_ego } />
 
                             <p className="card-text">
